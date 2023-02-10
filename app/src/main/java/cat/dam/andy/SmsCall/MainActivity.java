@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
                 SmsManager smsMgr = SmsManager.getDefault();
                 smsMgr.sendTextMessage(phone_number, null, message, sentPI, null);
             } catch (Exception e) {
-                Toast.makeText(this, e.getMessage() + "!\n" + R.string.sms_failed_to_send, Toast.LENGTH_LONG).show();
+                createToast( e.getMessage() + "!\n" + R.string.sms_failed_to_send);
                 e.printStackTrace();
             }
     }
