@@ -141,20 +141,20 @@ public class MainActivity extends AppCompatActivity {
                         int resultCode = getResultCode();
                         switch (resultCode) {
                             case Activity.RESULT_OK:
-                                Toast.makeText(getBaseContext(), R.string.sms_send, Toast.LENGTH_LONG).show();
+                                createToast(getResources().getString(R.string.sms_send));
                                 et_sms.setText("");
                                 break;
                             case SmsManager.RESULT_ERROR_GENERIC_FAILURE:
-                                Toast.makeText(getBaseContext(), R.string.sms_failure, Toast.LENGTH_LONG).show();
+                                createToast(getResources().getString(R.string.sms_send));
                                 break;
                             case SmsManager.RESULT_ERROR_NO_SERVICE:
-                                Toast.makeText(getBaseContext(), R.string.sms_no_service,  Toast.LENGTH_LONG).show();
+                                createToast(getResources().getString(R.string.sms_no_service));
                                 break;
                             case SmsManager.RESULT_ERROR_NULL_PDU:
-                                Toast.makeText(getBaseContext(), R.string.sms_null_PDU, Toast.LENGTH_LONG).show();
+                                createToast(getResources().getString(R.string.sms_null_PDU));
                                 break;
                             case SmsManager.RESULT_ERROR_RADIO_OFF:
-                                Toast.makeText(getBaseContext(), R.string.sms_radio_off, Toast.LENGTH_LONG).show();
+                                createToast(getResources().getString(R.string.sms_radio_off));
                                 break;
                         }
                     }
