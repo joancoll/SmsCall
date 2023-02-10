@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SmsCall</string>
+    <string name="sms_hint">Si vol enviar un SMS, escrigui\'l aquí</string>
+    <string name="send_sms">SMS</string>
+    <string name="send_call">CALL</string>
+    <string name="delete_digit">DEL</string>
+    <string name="phone_wrong_format">Número de telèfon incorrecte, entri un número vàlid</string>
+    <string name="sms_wrong_format">Format de SMS incorrecte, comprovi el missatge</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="permissionGranted">Permission granted</string>
+    <string name="permissionDenied">Permission denied</string>
+    <string name="permissionPermDenied">Permission permanently denied</string>
+    <string name="callPermissionNeeded">We need access to call</string>
+    <string name="callPermissionThanks">You gave access to call. Thanks!</string>
+    <string name="callPermissionSettings">You permanently denied access to call, please enable this permission in your settings to enjoy this app.</string>
+    <string name="smsPermissionNeeded">We need access to send SMS</string>
+    <string name="smsPermissionThanks">You gave access to sms. Thanks!</string>
+    <string name="smsPermissionSettings">You permanently denied access to sms, please enable this permission in your settings to enjoy this app.</string>
+    <string name="sms_send">SMS was sent</string>
+    <string name="sms_failure">Generic failure</string>
+    <string name="sms_no_service">No service</string>
+    <string name="sms_null_PDU">Null PDU</string>
+    <string name="sms_radio_off">Radio off</string>
+    <string name="sms_failed_to_send">Failed to send SMS</string>
+</resources>

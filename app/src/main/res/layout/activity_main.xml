@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_sms"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sms_hint"
+        android:importantForAutofill="no"
+        android:textSize="18sp"
+        android:maxLength="200"
+        android:backgroundTint="@color/colorRed"/>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:maxLength="15"/>
+
+    <GridLayout
+        android:id="@+id/gl_numeric_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:rowCount="5"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/btn_num_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3"
+            android:text="0"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="onClickNumbers"/>
+
+        <Button
+            android:id="@+id/btn_num_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="1"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="onClickNumbers"/>
+
+        <Button
+            android:id="@+id/btn_num_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="2"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="onClickNumbers"/>
+
+        <Button
+            android:id="@+id/btn_num_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="3"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="onClickNumbers"/>
+
+        <Button
+            android:id="@+id/btn_num_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="4"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="onClickNumbers"/>
+
+        <Button
+            android:id="@+id/btn_num_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="5"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="onClickNumbers"/>
+
+        <Button
+            android:id="@+id/btn_num_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="6"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="onClickNumbers"/>
+
+        <Button
+            android:id="@+id/btn_num_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="7"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="onClickNumbers"/>
+
+        <Button
+            android:id="@+id/btn_num_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="8"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="onClickNumbers"/>
+
+        <Button
+            android:id="@+id/btn_num_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="9"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="onClickNumbers"/>
+
+        <Button
+            android:id="@+id/btn_send_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/send_sms"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/btn_send_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/send_call"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/btn_delete_digit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/delete_digit"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:textAllCaps="true"/>
+    </GridLayout>
+</LinearLayout>
